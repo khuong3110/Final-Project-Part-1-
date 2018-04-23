@@ -1,0 +1,14 @@
+.banner{
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/blackboard.jpg);
+    text-align: center;
+}
+
+.banner_text{
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+    color: #fff;
+}
