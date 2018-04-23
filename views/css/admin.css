@@ -1,11 +1,11 @@
 .navbar-inverse .navbar-inner {
-    background-color: #072b34;
+    background-color: #093641;
     background-image: -moz-linear-gradient(340deg,#093641,#093641);
     background-image: -webkit-linear-gradient(340deg,#093641,#093641);
     background-image: -o-linear-gradient(340deg,#093641,#093641);
     background-image: linear-gradient(340deg,#093641,#093641);
     background-repeat: repeat-x;
-    border-color: #072b34;
+    border-color: #093641;
     filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffCB356B',endColorstr='#ffBD3F32',GradientType=0);
 }
 

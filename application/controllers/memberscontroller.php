@@ -1,25 +1,31 @@
 <?php
 
 class MembersController extends Controller{
-	
-	public $userObject;
-  
-   	public function users($uID){
-        $this->userObject = new Users();
-		$user = $this->userObject->getUser($uID);	    
-	  	$this->set('user',$user);
-   	}
-	
-	public function index(){
-        $this->userObject = new Users();
-		$users = $this->userObject->getAllUsers();
-		$this->set('title', 'The Members View');
-		$this->set('users',$users);
-		$this->set('first_name',$first_name);
-		$this->set('last_name',$last_name);
-		$this->set('email',$email);
-	}
-	
-}
 
-?>
+
+    public $userObject;
+
+    public function index(){
+        $this->set('currentAction','all');
+        $this->set('title', 'Member List');
+        $this->userObject = new User();
+        $members = $this->userObject->getAllUsers();
+        $this->set('members', $members);
+    }
+
+    public function profile($uID){
+        $this->set('currentAction','profile');
+        $this->set('title', 'Member Information');
+        $this->userObject = new User();
+        $member = $this->userObject->getUser($uID);
+        $this->set('first_name', $member['first_name']);
+        $this->set('last_name', $member['last_name']);
+        $this->set('email', $member['email']);
+
+
+    }
+
+
+
+
+}

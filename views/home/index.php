@@ -2,9 +2,8 @@
 <div class="page-header banner">
     <h1 class="banner_text">IUPUI CIT313 Final Project</h1>
 </div>
-
 <div class="container">
-	<hr>
+    <hr>
 	<div class="page-header">
     <h1> Latest News from <?php echo $channel_title; ?> </h1>
         <?php if(isset($_SESSION['message'])){?>

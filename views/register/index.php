@@ -5,7 +5,7 @@ include('views/elements/header.php');
 <div class="container">
 	<div class="page-header">
    <h1>Register</h1>
-   
+
    <?php if($message){?>
     <div class="alert alert-success">
     <button type="button" class="close" data-dismiss="alert">×</button>
